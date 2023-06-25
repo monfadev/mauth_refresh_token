@@ -74,7 +74,6 @@ class BaseAPIClient extends http.BaseClient implements BaseAPIInterface {
     if (resp != null) {
       return resp;
     } else {
-      clog('kesini');
       await CacheManager.instance.clear();
       return null;
     }
